@@ -1,0 +1,9 @@
+<div>
+    <app-output id="low" [count]="(count$ | async).a"></app-output>
+
+    <button (click)="start()">START</button>
+    <button (click)="stop()">STOP</button>
+    <button (click)="reset()">RESET</button>
+
+    <app-output id="high" [count]="(count$ | async).b"></app-output>
+</div>
